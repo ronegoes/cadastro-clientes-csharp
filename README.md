@@ -17,6 +17,16 @@ Este é um sistema de console desenvolvido em **C#** com integração ao **Postg
 - iTextSharp (PDF)
 - Visual Studio
 
+- 
+## 🐘 Banco de Dados
+
+O banco de dados utilizado é o **PostgreSQL**.  
+Você pode ajustar a string de conexão diretamente no código (`Database.cs` ou `TelaDeVendas.cs`).
+
+```csharp
+"Host=localhost;Username=postgres;Password=senha;Database=SistemaCadastroCsharp"
+
+
 ## 💻 Funcionalidades
 
 - Cadastro, edição, busca e exclusão de clientes
@@ -26,4 +36,4 @@ Este é um sistema de console desenvolvido em **C#** com integração ao **Postg
 - Registro da venda em banco de dados
 
 ## 📂 Estrutura
-
+cadastro-clientes-csharp/ ├── Cliente.cs ├── ClienteService.cs ├── Produto.cs ├── ProdutoServico.cs ├── TelaDeVendas.cs ├── Program.cs ├── Database.cs └── ...
