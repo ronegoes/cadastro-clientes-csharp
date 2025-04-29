@@ -1,39 +1,34 @@
-# cadastro-clientes-csharp
-# 🧾 Sistema de Cadastro e Vendas em C#
+# Sistema de Cadastro de Clientes e Produtos em C#
 
-Este é um sistema de console desenvolvido em **C#** com integração ao **PostgreSQL** que permite:
+Este é um sistema desenvolvido em C# para o cadastro de clientes e produtos, controle de estoque, e geração de vendas com emissão de PDF. Ele permite que o usuário registre clientes, adicione produtos ao estoque, realize vendas e registre essas informações em um banco de dados PostgreSQL. Além disso, gera um PDF com os detalhes da venda.
 
-✅ Cadastrar clientes  
-✅ Adicionar e gerenciar produtos (nome, preço, descrição, quantidade)  
-✅ Atualizar ou deletar registros de clientes e produtos  
-✅ Realizar vendas (com controle de estoque)  
-✅ Gerar uma fatura da venda em **formato PDF**  
-✅ Registrar cada venda no banco de dados
+## Funcionalidades
 
-## 🛠️ Tecnologias utilizadas
+- **Cadastro de Clientes:** Permite registrar clientes no sistema.
+- **Cadastro de Produtos:** Permite adicionar produtos com informações como nome, quantidade e preço.
+- **Gestão de Estoque:** Permite atualizar a quantidade dos produtos no estoque.
+- **Venda de Produtos:** Realiza a venda de produtos, gerando um PDF da fatura de venda.
+- **Relatórios:** Emite relatórios das vendas realizadas.
+- **Armazenamento em Banco de Dados:** Utiliza o PostgreSQL para persistência dos dados.
 
-- C# (.NET 8)
+## Tecnologias Utilizadas
+
+- C#
+- .NET 6
 - PostgreSQL
-- iTextSharp (PDF)
-- Visual Studio
+- iTextSharp (para geração de PDF)
 
-- 
-## 🐘 Banco de Dados
+## Como Rodar o Sistema
 
-O banco de dados utilizado é o **PostgreSQL**.  
-Você pode ajustar a string de conexão diretamente no código (`Database.cs` ou `TelaDeVendas.cs`).
+### Pré-requisitos:
 
-```csharp
-"Host=localhost;Username=postgres;Password=senha;Database=SistemaCadastroCsharp"
+- **.NET SDK** instalado. Você pode baixar o SDK do .NET [aqui](https://dotnet.microsoft.com/download).
+- **PostgreSQL** instalado e configurado. Você pode baixar o PostgreSQL [aqui](https://www.postgresql.org/download/).
+- Uma IDE como o [Visual Studio](https://visualstudio.microsoft.com/) ou [Visual Studio Code](https://code.visualstudio.com/).
 
+### Passos:
 
-## 💻 Funcionalidades
+1. Clone o repositório:
 
-- Cadastro, edição, busca e exclusão de clientes
-- Cadastro, edição, busca e exclusão de produtos
-- Controle de estoque vinculado à venda
-- Geração automática de PDF com os dados do cliente e venda
-- Registro da venda em banco de dados
-
-## 📂 Estrutura
-cadastro-clientes-csharp/ ├── Cliente.cs ├── ClienteService.cs ├── Produto.cs ├── ProdutoServico.cs ├── TelaDeVendas.cs ├── Program.cs ├── Database.cs └── ...
+   ```bash
+   git clone https://github.com/ronegoes/cadastro-clientes-csharp.git
